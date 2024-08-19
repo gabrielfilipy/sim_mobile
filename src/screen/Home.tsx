@@ -3,10 +3,12 @@ import { Text, View } from "react-native";
 import { styles } from "./Style";
 import { Button } from "../componentes-compartilhados/button/Button";
 import { useNavigation } from "@react-navigation/native";
+import { Mesa } from "./mesa/Mesa";
+import { AppStackNavigationProp } from "../router/types";
 
 export function HomeScreen() {
 
-  const navigation = useNavigation();
+  const navigation = useNavigation<AppStackNavigationProp>();
 
     return (
       <View style={styles.container}>
