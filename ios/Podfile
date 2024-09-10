@@ -23,6 +23,8 @@ target 'sim_mobile' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  pod 'react-native-vector-icons', :path => '../node_modules/react-native-vector-icons'
+
   target 'sim_mobileTests' do
     inherit! :complete
     # Pods for testing

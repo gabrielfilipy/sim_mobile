@@ -4,7 +4,7 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 //RootStackParamList Define todos os possíveis nomes de tela e seus parâmetros (ou undefined se não houver parâmetros).
 export type RootStackParamList = {
   Home: undefined;
-  Mesa: undefined;
+  MesaVirtual: undefined;
   SignInScreen: undefined;
   cadastrarDocumento: undefined;
   
