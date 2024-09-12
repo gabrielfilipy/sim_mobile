@@ -3,6 +3,8 @@ import React from "react";
 import { HomeScreen } from "../screen/Home";
 import { Mesa } from "../screen/mesa/Mesa";
 import { RootStackParamList } from "./types";
+import { Screen } from "react-native-screens";
+import { Header } from "react-native/Libraries/NewAppScreen";
 
 //Cria um stack navigator que gerencia a navegação entre telas empilhadas
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -15,7 +17,7 @@ export function AppStack() {
 
     return (
     <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Home" component={HomeScreen}  options={{ headerShown: false }}/>
         <Stack.Screen name="Mesa" component={Mesa} />
     </Stack.Navigator>
     );
