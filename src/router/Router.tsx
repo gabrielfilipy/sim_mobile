@@ -3,7 +3,7 @@ import React from "react";
 import { AppStack } from "./AppStack";
 import { AuthStack } from "./AuthStack";
 
-const auth = true; //autentica a autorizacao do usuario. 
+const auth = false; //autentica a autorizacao do usuario. 
 
 export function Router() {
     return (
