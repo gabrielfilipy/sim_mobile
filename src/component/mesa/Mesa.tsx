@@ -1,6 +1,6 @@
 import React, { Text, View } from 'react-native';
-import { styles } from '../Style';
 import { Button } from '../../componentes-compartilhados/button/Button';
+import { styles } from '../screen/Style';
 
 export function Mesa (){
     

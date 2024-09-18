@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Image, TextInputComponent, View } from "react-native";
 import styles from "../../../Style";
-
 import { Button } from "../../componentes-compartilhados/button/Button";
 import { CustomTextInput } from "../../componentes-compartilhados/textInput/CustomTextInput";
 

@@ -1,10 +1,9 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
-import { HomeScreen } from "../screen/Home";
-import { Mesa } from "../screen/mesa/Mesa";
 import { RootStackParamList } from "./types";
-import { Screen } from "react-native-screens";
-import { Header } from "react-native/Libraries/NewAppScreen";
+import { HomeScreen } from "../screen/Home";
+import { Mesa } from "../mesa/Mesa";
+
 
 //Cria um stack navigator que gerencia a navegação entre telas empilhadas
 const Stack = createNativeStackNavigator<RootStackParamList>();
