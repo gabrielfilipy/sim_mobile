@@ -13,7 +13,7 @@ export function AuthStack() {
         //aqui poderá ter rotas de recuperar senha por exemplo.
 
     <Stack.Navigator>
-        <Stack.Screen name="SignInScreen" component={SignInScreen} />
+        <Stack.Screen name="SignInScreen" component={SignInScreen} options={{ headerShown: false }}/>
     </Stack.Navigator>
     );
 }
