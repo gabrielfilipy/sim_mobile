@@ -2,7 +2,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
 import { RootStackParamList } from "./types";
 import { HomeScreen } from "../screen/Home";
-import { Mesa } from "../mesa/Mesa";
+import MainLayout from "../mainLayout/MainLayout"; 
+import MesaVirtual from "../mesa/Mesa";
 
 
 //Cria um stack navigator que gerencia a navegação entre telas empilhadas
@@ -15,9 +16,25 @@ export function AppStack() {
     //são as rotas disponíveis dentro desse stack navigator.
 
     return (
-    <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen}  options={{ headerShown: false }}/>
-        <Stack.Screen name="Mesa" component={Mesa} />
-    </Stack.Navigator>
+        <Stack.Navigator
+            screenOptions={{
+                headerShown: false, // Remove o header em todas as telas
+            }}
+        >
+            <Stack.Screen name="Home">
+                {(props: any) => (
+                    <MainLayout {...props}>
+                        <HomeScreen />
+                    </MainLayout>
+                )}
+            </Stack.Screen>
+            <Stack.Screen name="MesaVirtual">
+                {(props: any) => (
+                    <MainLayout {...props}>
+                        <MesaVirtual />
+                    </MainLayout>
+                )}
+            </Stack.Screen>
+        </Stack.Navigator>
     );
 }
